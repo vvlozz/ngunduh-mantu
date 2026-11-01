@@ -23,18 +23,17 @@ const WEDDING_CONFIG = {
   event: {
     // Format ISO + offset +07:00 (WIB) agar countdown selalu menghitung ke jam WIB,
     // berapa pun zona waktu perangkat tamu.
-    isoDate: "2026-11-15T07:00:00+07:00",
-    dateLabel: "Minggu, 15 November 2026",
-    akadTime: "07.00 WIB - 09.00 WIB",
-    resepsiTime: "10.00 WIB - Selesai",
-    location: "KEBON GEDE VENUE (ANGGREK)",
+    isoDate: "2026-11-22T08:00:00+07:00",
+    dateLabel: "Minggu, 22 November 2026",
+    Time: "08.00 WIB - Selesai",
+    location: "Kediaman Mempelai Pria",
     address:
-      "Jl. Sultan Moh. Mansyur No.687, 35 Ilir, Kec. Ilir Bar. II, Kota Palembang",
-    mapsUrl: "https://maps.app.goo.gl/zMHQMNzdFqR3dWuUA",
+      "Sungai Pinang, Jalan Meritai, Lorong Teratai 1, RT 22A Dusun V, Kec. Rambutan, Kab. Banyuasin",
+    mapsUrl: "https://maps.app.goo.gl/va9QeMktSe4ZoDH56",
     // Query untuk peta tertanam (embed) di section "Peta Lokasi".
     // Default: dibuat otomatis dari location + address di atas.
     // Bisa ditimpa manual di sini kalau hasil pencarian otomatis kurang akurat.
-    mapsEmbedQuery: "",
+    mapsEmbedQuery: "https://maps.app.goo.gl/va9QeMktSe4ZoDH56",
   },
 
   // -------------------- KATA PEMBUKA / AYAT --------------------

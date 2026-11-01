@@ -25,15 +25,20 @@ const WEDDING_CONFIG = {
     // berapa pun zona waktu perangkat tamu.
     isoDate: "2026-11-22T08:00:00+07:00",
     dateLabel: "Minggu, 22 November 2026",
-    Time: "08.00 WIB - Selesai",
-    location: "Kediaman Mempelai Pria",
+    Time: "Pukul 08.00 WIB s.d selesai",
+    entertainment: "O.M Prima Music",
+    entertainmentNight: "Minggu Malam Senin : Tari India",
+    location: "Sungai Pinang",
     address:
-      "Sungai Pinang, Jalan Meritai, Lorong Teratai 1, RT 22A Dusun V, Kec. Rambutan, Kab. Banyuasin",
+      "Jalan Meritai, Lorong Teratai 1, RT 22A Dusun V, Kec. Rambutan, Kab. Banyuasin",
     mapsUrl: "https://maps.app.goo.gl/va9QeMktSe4ZoDH56",
     // Query untuk peta tertanam (embed) di section "Peta Lokasi".
     // Default: dibuat otomatis dari location + address di atas.
     // Bisa ditimpa manual di sini kalau hasil pencarian otomatis kurang akurat.
-    mapsEmbedQuery: "https://maps.app.goo.gl/va9QeMktSe4ZoDH56",
+    // PENTING: link pendek (maps.app.goo.gl) TIDAK bisa dipakai untuk peta tertanam.
+    // Isi dengan koordinat titik lokasi, format "latitude,longitude"
+    // (contoh: "-2.9760,104.7754"). Kalau dikosongkan, peta mencari dari alamat teks.
+    mapsEmbedQuery: "-3.043110510560559,104.8391134463167",
   },
 
   // -------------------- KATA PEMBUKA / AYAT --------------------
@@ -45,7 +50,7 @@ const WEDDING_CONFIG = {
     arabicText:
       "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً",
     translation:
-      '"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."',
+      '"Dan di antara tanda-tanda kebesaran-Nya ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu. Sesungguhnya yang demikian itu menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir."',
     source: "QS. Ar-Rum: 21",
   },
 
@@ -54,7 +59,7 @@ const WEDDING_CONFIG = {
     groom: {
       fullName: "Yusran Hanif",
       childOrder: "Anak pertama dari",
-      parents: "Bapak Sufri & Ibu Yuliatin",
+      parents: "Bapak Sufri (Ling) & Ibu Yuliatin (Yul)",
       instagram: "",
       photo: "assets/images/groom.jpeg",
       photoPosition: "center",
@@ -257,7 +262,7 @@ const WEDDING_CONFIG = {
   // (berakhiran "/exec") → tempel di bawah ini.
   rsvp: {
     endpoint:
-      "https://script.google.com/macros/s/AKfycby9FG3iJytnrAjoFh6svO4z5-tUZXkms9XOdTQHAkDSp5L3EhduaFBPGqcsw5noA1iS/exec",
+      "https://script.google.com/macros/s/AKfycbxKAf_m9sXGP59qubUzjcmnIyzPHt1hEmM8h1liQpp1I8vGWFqUMCF9fx7Qr3BiLMN6BA/exec",
     // Seberapa sering website mengecek ucapan baru dari Google Sheets (dalam
     // milidetik). Buku Tamu akan otomatis update tanpa perlu refresh halaman.
     // 25 detik (bukan lebih cepat) agar kuota Google Apps Script tidak habis

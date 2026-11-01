@@ -19,7 +19,7 @@ const ContentBuilder = {
     document.title = `${WEDDING_CONFIG.couple.brideName} & ${WEDDING_CONFIG.couple.groomName} — Mohon Doa Restu`;
     Utils.$("#meta-description").setAttribute(
       "content",
-      `Pernikahan ${WEDDING_CONFIG.couple.brideName} & ${WEDDING_CONFIG.couple.groomName}`,
+      `Undangan Ngunduh Mantu ${WEDDING_CONFIG.couple.brideName} & ${WEDDING_CONFIG.couple.groomName}`,
     );
   },
 
@@ -40,9 +40,10 @@ const ContentBuilder = {
   _renderDetail() {
     const { event } = WEDDING_CONFIG;
     Utils.$("#detail-date-1").textContent = event.dateLabel;
-    Utils.$("#detail-time-1").textContent = event.akadTime;
-    Utils.$("#detail-date-2").textContent = event.dateLabel;
-    Utils.$("#detail-time-2").textContent = event.resepsiTime;
+    Utils.$("#detail-time-1").textContent = event.Time;
+    Utils.$("#detail-entertainment").textContent = event.entertainment || "";
+    Utils.$("#detail-entertainment-night").textContent =
+      event.entertainmentNight || "";
     Utils.$("#detail-location").textContent = event.location;
     Utils.$("#detail-address").textContent = event.address;
     Utils.$("#detail-maps-link").href = event.mapsUrl;

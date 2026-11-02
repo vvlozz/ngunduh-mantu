@@ -6,27 +6,27 @@
  */
 :root {
   /* ---------- Warna Utama ---------- */
-  --color-cream: #fbf6ec;
-  --color-cream-soft: #f7f0e2;
-  --color-cream-dark: #ecdfc4;
+  --color-cream: #fffafa;
+  --color-cream-soft: #fdf1f2;
+  --color-cream-dark: #f3d9dc;
   --color-white: #ffffff;
 
-  --color-sage: #8a2f42;
-  --color-sage-dark: #4a1622;
-  --color-sage-soft: #f3e6d5;
+  --color-sage: #a65d6c;
+  --color-sage-dark: #6b3340;
+  --color-sage-soft: #fbe9eb;
 
-  --color-gold: #b99a4e;
-  --color-gold-light: #dcc27c;
+  --color-gold: #c9959c;
+  --color-gold-light: #ecc9ce;
 
-  --color-brown: #5c4433;
-  --color-brown-light: #b08968;
+  --color-brown: #5d4047;
+  --color-brown-light: #c4939a;
 
-  --color-ink: #332a24;
-  --color-ink-soft: #6e5f52;
+  --color-ink: #3a2a2f;
+  --color-ink-soft: #7d6168;
 
   --color-rose: #d98a95;
-  --color-maroon: #6d2233;
-  --color-maroon-dark: #4a1622;
+  --color-maroon: #8f4655;
+  --color-maroon-dark: #6b3340;
 
   /* ---------- Gradasi ---------- */
   --gradient-hero: linear-gradient(180deg, rgba(46, 34, 24, 0.18) 0%, rgba(40, 28, 18, 0.58) 100%);
@@ -58,8 +58,8 @@
   --radius-lg: 28px;
   --radius-pill: 999px;
 
-  --shadow-soft: 0 8px 30px rgba(92, 68, 51, 0.12);
-  --shadow-elevated: 0 16px 45px rgba(92, 68, 51, 0.18);
+  --shadow-soft: 0 8px 30px rgba(109,64,74, 0.12);
+  --shadow-elevated: 0 16px 45px rgba(109,64,74, 0.18);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.5);
 
   /* ---------- Glassmorphism ---------- */

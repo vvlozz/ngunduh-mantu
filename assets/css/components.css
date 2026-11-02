@@ -43,7 +43,7 @@
 .btn-ghost {
   background: rgba(255,255,255,0.35);
   color: var(--color-ink);
-  border: 1px solid rgba(92,68,51,0.15);
+  border: 1px solid rgba(109,64,74,0.15);
 }
 
 .btn-small { padding: 0.55rem 1.3rem; font-size: 0.8rem; margin-top: 0.75rem; }
@@ -165,7 +165,7 @@
 }
 .popup-dialog__inner {
   position: relative;
-  background: linear-gradient(180deg, #fffaf1, #f2ecd9);
+  background: linear-gradient(180deg, #fffafa, #f8e7e9);
   border: 1.5px solid var(--color-gold);
   border-radius: var(--radius-md);
   padding: 0.85rem 1.1rem;
@@ -196,7 +196,7 @@
 .popup-dialog__tail {
   width: 14px;
   height: 14px;
-  background: #f7ecd6;
+  background: #fbe6e9;
   border-right: 1.5px solid var(--color-gold);
   border-bottom: 1.5px solid var(--color-gold);
   transform: rotate(45deg) translateX(-50%);
@@ -287,14 +287,14 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   position: relative;
-  box-shadow: 0 10px 30px rgba(20,26,14,0.2), inset 0 1px 0 rgba(255,255,255,0.65);
+  box-shadow: 0 10px 30px rgba(70,40,50,0.2), inset 0 1px 0 rgba(255,255,255,0.65);
 }
 .joystick-thumb {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   background: var(--gradient-gold);
-  box-shadow: 0 4px 12px rgba(92,68,51,0.35);
+  box-shadow: 0 4px 12px rgba(109,64,74,0.35);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -387,7 +387,7 @@
   letter-spacing: 0.02em;
   padding: 0.58rem 0.8rem;
   border-radius: 16px;
-  box-shadow: 0 8px 22px rgba(20,26,14,0.28), 0 0 0 2px rgba(255,255,255,0.5) inset;
+  box-shadow: 0 8px 22px rgba(70,40,50,0.28), 0 0 0 2px rgba(255,255,255,0.5) inset;
   opacity: 0;
   visibility: hidden;
   transform: translateY(6px) scale(0.96);

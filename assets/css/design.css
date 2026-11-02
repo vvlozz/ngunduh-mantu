@@ -3,35 +3,35 @@
  * Visual refresh only: preserves existing content, interactions and game logic.
  */
 :root {
-  --color-cream: #fbf8f1;
-  --color-cream-soft: #f2eee4;
-  --color-cream-dark: #ded7c6;
-  --color-white: #fffdf8;
-  --color-sage: #8a2f42;
-  --color-sage-dark: #4a1622;
-  --color-sage-soft: #f3e6d5;
-  --color-gold: #b08a4a;
-  --color-gold-deep: #85632a; /* emas tua: khusus teks kecil agar kontras terbaca (~4,6:1) */
-  --color-gold-light: #ddc38b;
-  --color-brown: #5a4638;
-  --color-brown-light: #a98a73;
-  --color-ink: #332a24;
-  --color-ink-soft: #6e5f52;
-  --color-rose: #c98f91;
-  --color-maroon: #6d2233;
-  --color-maroon-dark: #4a1622;
-  --color-card: #f4ede0;
-  --gradient-gold: linear-gradient(135deg, #ead7a7, #b08a4a);
-  --gradient-sage: linear-gradient(135deg, #b08a4a, #6d2233);
-  --gradient-meadow: linear-gradient(180deg, #fbf8f1 0%, #f2e2c8 52%, #ddc38b 100%);
-  --glass-bg: rgba(255, 253, 248, .72);
+  --color-cream: #fffafa;
+  --color-cream-soft: #fbeff0;
+  --color-cream-dark: #f0d6da;
+  --color-white: #fffcfc;
+  --color-sage: #a65d6c;
+  --color-sage-dark: #6b3340;
+  --color-sage-soft: #fbe9eb;
+  --color-gold: #c9959c;
+  --color-gold-deep: #9a5c68; /* emas tua: khusus teks kecil agar kontras terbaca (~4,6:1) */
+  --color-gold-light: #ecc9ce;
+  --color-brown: #5d4047;
+  --color-brown-light: #c4939a;
+  --color-ink: #3a2a2f;
+  --color-ink-soft: #7d6168;
+  --color-rose: #d99aa5;
+  --color-maroon: #8f4655;
+  --color-maroon-dark: #6b3340;
+  --color-card: #fcf1f2;
+  --gradient-gold: linear-gradient(135deg, #f3d6da, #c9959c);
+  --gradient-sage: linear-gradient(135deg, #c9959c, #8f4655);
+  --gradient-meadow: linear-gradient(180deg, #fffafa 0%, #f7dfe3 52%, #ecc9ce 100%);
+  --glass-bg: rgba(255,252,252, .72);
   --glass-border: rgba(255,255,255,.82);
-  --shadow-soft: 0 12px 34px rgba(53, 60, 48, .09);
-  --shadow-elevated: 0 22px 55px rgba(42, 50, 41, .16);
+  --shadow-soft: 0 12px 34px rgba(90,50,60, .09);
+  --shadow-elevated: 0 22px 55px rgba(90,50,60, .16);
 }
 
 body {
-  background: #efe6d8;
+  background: #f6e3e6;
 }
 body::before {
   content: "";
@@ -139,8 +139,8 @@ body::before {
 
 .hero-overlay {
   background:
-    radial-gradient(circle at 15% 8%, rgba(109,34,51,.04), transparent 40%),
-    radial-gradient(circle at 88% 85%, rgba(109,34,51,.05), transparent 45%),
+    radial-gradient(circle at 15% 8%, rgba(143,70,85,.04), transparent 40%),
+    radial-gradient(circle at 88% 85%, rgba(143,70,85,.05), transparent 45%),
     linear-gradient(180deg, rgba(248,240,227,.15) 0%, rgba(238,224,203,.18) 100%);
 }
 
@@ -169,7 +169,7 @@ body::before {
   border: 1px solid var(--color-maroon);
   border-radius: 26px;
   padding: 3.4rem 1.4rem 2rem;
-  box-shadow: 0 30px 60px rgba(45,20,20,.22), 0 2px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 30px 60px rgba(90,50,60,.22), 0 2px 0 rgba(255,255,255,.5) inset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,7 +215,7 @@ body::before {
   transform: translateX(-50%);
   width: 92px;
   height: auto;
-  filter: drop-shadow(0 10px 18px rgba(45,20,20,.35));
+  filter: drop-shadow(0 10px 18px rgba(90,50,60,.35));
 }
 
 .hero-content .eyebrow {
@@ -252,8 +252,8 @@ body::before {
   min-width: min(100%, 285px);
   padding: .95rem 1.35rem 1rem;
   border-radius: 14px;
-  background: #eceae4;
-  border: 1px solid rgba(109,34,51,.4);
+  background: #f3eaeb;
+  border: 1px solid rgba(143,70,85,.4);
   box-shadow: none;
   backdrop-filter: none;
 }
@@ -282,8 +282,8 @@ body::before {
 .countdown-item {
   min-width: 0;
   padding: .65rem .35rem .55rem;
-  border: 1px solid rgba(109,34,51,.35);
-  background: rgba(109,34,51,.05);
+  border: 1px solid rgba(143,70,85,.35);
+  background: rgba(143,70,85,.05);
   border-radius: 14px;
   backdrop-filter: none;
 }
@@ -354,7 +354,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.7rem 2.3rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
 }
 .ayat-card::before {
   content: "";
@@ -373,7 +373,7 @@ body::before {
   transform: translateX(-50%);
   width: 86px;
   height: auto;
-  filter: drop-shadow(0 10px 18px rgba(45,20,20,.32));
+  filter: drop-shadow(0 10px 18px rgba(90,50,60,.32));
   z-index: 2;
 }
 
@@ -466,7 +466,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.4rem 2.2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
 }
 .profile-frame::before {
   content: "";
@@ -485,7 +485,7 @@ body::before {
   transform: translateX(-50%);
   width: 86px;
   height: auto;
-  filter: drop-shadow(0 10px 18px rgba(45,20,20,.32));
+  filter: drop-shadow(0 10px 18px rgba(90,50,60,.32));
   z-index: 2;
 }
 
@@ -584,10 +584,10 @@ body::before {
 /* Section backgrounds */
 .detail-section,
 .gallery-section,
-.gift-section { background: linear-gradient(180deg, #fbf8f1, #f6f2e8); }
+.gift-section { background: linear-gradient(180deg, #fffafa, #fcf0f1); }
 .love-story-section,
 .rsvp-section,
-.livewall-section { background: linear-gradient(180deg, #f8f2e6, #f0e4cd); }
+.livewall-section { background: linear-gradient(180deg, #fdf3f4, #f5dde0); }
 /* Detail Acara sekarang punya layer foto (hero-bg) yang fade di tepi
    atas/bawahnya — base color-nya disamakan dengan cream-soft supaya
    nyambung mulus ke section Profil sebelumnya & Peta sesudahnya. */
@@ -610,7 +610,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.5rem 2.2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
   text-align: center;
 }
 .detail-frame::before {
@@ -663,8 +663,8 @@ body::before {
 .livewall-card,
 .rsvp-form {
   position: relative;
-  border: 1px solid rgba(176,138,74,.16);
-  background: rgba(255,253,248,.72);
+  border: 1px solid rgba(201,149,156,.16);
+  background: rgba(255,252,252,.72);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(12px);
 }
@@ -681,7 +681,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 6px;
-  border: 1px solid rgba(176,138,74,.08);
+  border: 1px solid rgba(201,149,156,.08);
   border-radius: inherit;
   pointer-events: none;
 }
@@ -707,7 +707,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.5rem 2.2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
   text-align: center;
 }
 .map-frame::before {
@@ -736,7 +736,7 @@ body::before {
 .map-embed-wrap {
   max-width: 100%;
   background: rgba(255,255,255,.5);
-  border: 1px solid rgba(176,138,74,.3);
+  border: 1px solid rgba(201,149,156,.3);
 }
 .map-frame .btn { margin-top: .3rem; }
 
@@ -758,7 +758,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.3rem 2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
   text-align: center;
 }
 .gallery-frame::before {
@@ -790,7 +790,7 @@ body::before {
   margin-top: 1.6rem;
 }
 .gallery-item {
-  background: #fffdf8;
+  background: #fffcfc;
   padding: 7px 7px 0;
   border-radius: 6px;
   box-shadow: 0 10px 22px rgba(58,48,40,.18);
@@ -870,7 +870,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.6rem 2.2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
   text-align: center;
 }
 .lovestory-frame::before {
@@ -923,7 +923,7 @@ body::before {
   border: 1.5px solid var(--color-gold);
   border-radius: 26px;
   padding: 3.6rem 1.5rem 2.2rem;
-  box-shadow: 0 24px 50px rgba(45,20,20,.16);
+  box-shadow: 0 24px 50px rgba(90,50,60,.16);
   text-align: center;
 }
 .rsvp-frame::before,
@@ -978,7 +978,7 @@ body::before {
 .form-group input,
 .form-group select,
 .form-group textarea {
-  border: 1px solid rgba(96,82,68,.16) !important;
+  border: 1px solid rgba(143,70,85,.16) !important;
   background: rgba(255,255,255,.68) !important;
   border-radius: 13px !important;
   min-height: 46px;
@@ -988,22 +988,22 @@ body::before {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: rgba(176,138,74,.62) !important;
-  box-shadow: 0 0 0 4px rgba(176,138,74,.1) !important;
-  background: #fffdf8 !important;
+  border-color: rgba(201,149,156,.62) !important;
+  box-shadow: 0 0 0 4px rgba(201,149,156,.1) !important;
+  background: #fffcfc !important;
   outline: none;
 }
 
 /* Buku Tamu */
 .rsvp-list { margin-top: 1.6rem; max-width: 100%; }
-.rsvp-list-item { background: rgba(255,253,248,.8); border-left-color: var(--color-maroon); text-align: left; }
+.rsvp-list-item { background: rgba(255,252,252,.8); border-left-color: var(--color-maroon); text-align: left; }
 .rsvp-list-item strong { color: var(--color-maroon); }
 
 /* Gift */
 .gift-grid { gap: .85rem; margin-top: 1.8rem; grid-template-columns: 1fr; text-align: center; }
 .gift-card { border-radius: 22px; padding: 1.35rem; }
 .gift-account-item {
-  border: 1px solid rgba(96,82,68,.09);
+  border: 1px solid rgba(143,70,85,.09);
   background: rgba(255,255,255,.76);
   border-radius: 17px;
   padding: .9rem 1rem;
@@ -1051,7 +1051,7 @@ body::before {
 }
 .joystick-stick {
   background: var(--gradient-sage) !important;
-  box-shadow: 0 8px 18px rgba(109,34,51,.28) !important;
+  box-shadow: 0 8px 18px rgba(143,70,85,.28) !important;
   border: 2px solid rgba(255,255,255,.55) !important;
 }
 
@@ -1212,7 +1212,7 @@ body::before {
 ============================================================ */
 .hero-bg {
   background-image: url("../images/backgrounds/bg-page.jpg");
-  background-color: #efe3d2;
+  background-color: #f3dfe1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1244,7 +1244,7 @@ body::before {
 .gift-section,
 .opening-section,
 .profile-section {
-  background-color: #efe3d2;
+  background-color: #f3dfe1;
 }
 
 /* Cards stay close without touching. The artwork remains visible in the
@@ -1377,7 +1377,7 @@ body::before {
   padding: 0 0 3px;
   border: 1px solid var(--color-gold);
   border-radius: 50%;
-  background: rgba(255,253,248,.88);
+  background: rgba(255,252,252,.88);
   color: var(--color-maroon);
   font-size: 1.5rem;
   line-height: 1;
@@ -1397,7 +1397,7 @@ body::before {
   overflow: hidden;
   border-radius: 4px;
   background: var(--color-cream-soft);
-  box-shadow: inset 0 0 0 1px rgba(176,138,74,.35);
+  box-shadow: inset 0 0 0 1px rgba(201,149,156,.35);
 }
 .gallery-backdrop span {
   position: absolute;
@@ -1413,7 +1413,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(255,253,248,.10), rgba(255,253,248,.22));
+  background: linear-gradient(rgba(255,252,252,.10), rgba(255,252,252,.22));
 }
 
 .gallery-main {
@@ -1424,8 +1424,8 @@ body::before {
   max-height: 100%;
   width: auto;
   height: auto;
-  background: #fffdf8;
-  border: 4px solid #fffdf8;
+  background: #fffcfc;
+  border: 4px solid #fffcfc;
   outline: 1px solid var(--color-gold);
   outline-offset: 0;
   border-radius: 2px;
@@ -1493,8 +1493,8 @@ body::before {
   flex: 0 0 auto;
   height: 112px;
   padding: 0;
-  background: #fffdf8;
-  border: 2px solid #fffdf8;
+  background: #fffcfc;
+  border: 2px solid #fffcfc;
   outline: 1px solid rgba(185,154,78,.55);
   border-radius: 2px;
   box-shadow: 0 5px 12px rgba(58,48,40,.18);
@@ -1533,7 +1533,7 @@ body::before {
 }
 .profile-avatar.has-photo { border: none; }
 .lightbox-image {
-  border: 4px solid #fffdf8;
+  border: 4px solid #fffcfc;
   outline: 1px solid var(--color-gold);
   border-radius: 2px;
 }
@@ -1552,7 +1552,7 @@ body::before {
   margin: .25rem .15rem 0;
   text-align: right;
   font-size: .7rem;
-  color: var(--color-ink-soft, #6e5f52);
+  color: var(--color-ink-soft, #7d6168);
 }
 
 /* Lightbox: panah & geser */
@@ -1588,7 +1588,7 @@ body::before {
   transform: translate(-50%, -50%);
   border: 2px solid var(--color-gold);
   border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(255,253,248,.9), 0 6px 16px rgba(58,48,40,.3);
+  box-shadow: 0 0 0 1px rgba(255,252,252,.9), 0 6px 16px rgba(58,48,40,.3);
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
